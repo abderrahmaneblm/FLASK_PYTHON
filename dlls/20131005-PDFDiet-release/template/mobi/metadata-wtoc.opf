@@ -1,0 +1,31 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="pdfdiet">
+	<metadata>
+		<dc-metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:Txt2ePub="http://no722.cocolog-nifty.com/blog/metadata">
+			<dc:title>%TITLE%</dc:title>
+			<dc:creator>%CREATOR%</dc:creator>
+			<dc:date>%DATE%</dc:date>
+			<dc:language>%LANGUAGE%</dc:language>
+		</dc-metadata>
+		<x-metadata>
+			<EmbeddedCover>%COVER%</EmbeddedCover>
+		</x-metadata>
+
+		<!-- Kindle4 and KindlePW Fullscreen -->
+		<meta content="true" name="fixed-layout" />
+		<meta content="comic" name="book-type" />
+	</metadata>
+	<manifest>
+		<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml"/>
+%ITEMS%
+		<item id="stylesheet" href="%STYLESHEETPATH%" media-type="text/css"/>
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+	</manifest>
+	<spine page-progression-direction="%PAGEDIRECTION%">
+		<itemref idref="toc"/>
+	</spine>
+	<guide>
+		<reference type="toc" title="Table of Contents" href="toc.xhtml"></reference>
+		<reference type="start" title="Startup Page" href="%STARTPAGE%"></reference>
+	</guide>
+</package>

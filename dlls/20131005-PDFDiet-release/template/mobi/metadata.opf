@@ -1,0 +1,24 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="pdfdiet">
+	<metadata>
+		<dc-metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:Txt2ePub="http://no722.cocolog-nifty.com/blog/metadata">
+			<dc:title>%TITLE%</dc:title>
+			<dc:creator>%CREATOR%</dc:creator>
+			<dc:date>%DATE%</dc:date>
+			<dc:language>%LANGUAGE%</dc:language>
+		</dc-metadata>
+		<x-metadata>
+			<EmbeddedCover>%COVER%</EmbeddedCover>
+		</x-metadata>
+		
+		<!-- Kindle4 and KindlePW Fullscreen -->
+		<meta content="true" name="fixed-layout" />
+		<meta content="comic" name="book-type" />
+	</metadata>
+	<manifest>
+%ITEMS%
+	</manifest>
+	<spine page-progression-direction="%PAGEDIRECTION%">
+%SPINE%
+	</spine>
+</package>

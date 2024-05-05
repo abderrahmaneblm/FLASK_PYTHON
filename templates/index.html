@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Barcode Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles2.css') }}">
+</head>
+<body>
+    <h1>Product Nutrition Information</h1>
+    
+    <form method="POST" action="/product_info" enctype="multipart/form-data">
+        <label for="barcode">Enter Barcode:</label>
+        <input type="text" name="barcode" required>
+        <p><strong>OR :</strong></p><br>
+        <label for="image">Upload Barcode Image:</label>
+        <input type="file" name="image" accept=".jpg, .jpeg, .png">
+        <br>
+        <button type="submit">Get Product Info</button>
+    </form>
+</body>
+<footer>
+    <p> By :<small>Abderrahmane BOULMAKOIL</small></p>
+    <p><small>Data ressources :</small><i>Open Food Facts API</i></p>
+</footer>
+</html>

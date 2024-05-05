@@ -1,0 +1,63 @@
+
+// 
+// 行頭が // で始まる行はコメントとして無視します。
+// 改行だけの行も無視します。
+// 
+// デバイスリストは、1行に1デバイスを記述します。記述した順番で設定画面に表示されます。
+// 1行はタブ区切りで、表示名[TAB]リサイズ幅[TAB]リサイズ高さ[TAB]アイコン名
+// を記述します。アイコン名は eReader にでもしておくと良いと思います。
+// 
+
+Sony PRS-T3	758	1024	eReader
+Sony Reader	584	754	eReader
+//Sony Reader Daily Edition	584	978	eReader
+Sony Reader(Landscape)	784	554	eReader
+
+Kobo Glo(ZIP)	758	1024	eReader
+Kobo Touch(PDF)/mini	600	750	eReader
+Kobo Touch(ZIP)/mini	600	800	eReader
+
+Kindle Paperwhite	658	905	Kindle
+Kindle Paperwhite(mobi)	758	1024	Kindle
+Kindle3/4(PDF)	560	734	Kindle
+Kindle2(PDF)	560	750	Kindle
+Kindle Fire HD	800	1280	Kindle
+Kindle Fire HD 8.9	1200	1920	Kindle
+//Kindle DX(PDF)	784	1142	Kindle
+//Kindle DX & PC(PDF)	1568	2284	Kindle
+//Kindle DXg(PDF)	784	1135	Kindle
+//Kindle DXg & PC(PDF)	1568	2270	Kindle
+
+New iPad	1536	2048	iPad
+iPad/iPad2/iPad mini	768	1024	iPad
+iPhone5/5s/5c	640	1136	iPhone
+iPhone4/4S	640	960	iPhone
+iPhone3/iPod Touch	320	480	iPhone
+iPod	320	240	iPhone
+
+Nexus7 2013	1200	1980	Android
+Nexus7 2012	800	1200	Android
+
+//DS	256	192	GameMachine
+//PSP	480	272	GameMachine
+//PSP(Portlait)	272	480	GameMachine
+//PS-Vita	960	544	GameMachine
+//PS-Vita(Portlait)	544	960	GameMachine
+
+//iRiver Story HD	768	1024	eReader
+//EZ Reader(PDF)	584	754	eReader
+//EZ Reader(XPDF)	600	800	eReader
+//LIBRIe	600	800	eReader
+//Words Gear	600	800	eReader
+//iLiad	768	1024	eReader
+//Sigma Book	768	1024	eReader
+
+QVGA	320	240	Screen
+QVGA+	345	240	Screen
+WVGA	480	800	Screen
+FWVGA	480	854	Screen
+VGA	640	480	Screen
+VGA+	690	480	Screen
+SVGA	800	600	Screen
+XGA	1024	768	Screen
+

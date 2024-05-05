@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="%ID%"/>
+    <meta name="dtb:depth" content="%DEPTH%"/>
+    <meta name="dtb:generator" content="%GENERATOR%"/>
+    <meta name="dtb:totalPageCount" content="%TOTALPAGECOUNT%"/>
+    <meta name="dtb:maxPageNumber" content="%MAXPAGENUMBER%"/>
+  </head>
+  <docTitle>
+    <text>%TITLE%</text>
+  </docTitle>
+  <navMap>
+    %NAVPOINTS%
+  </navMap>
+</ncx>

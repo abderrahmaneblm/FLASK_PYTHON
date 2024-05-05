@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>Product Information</h1>
+    <div class="container">
+        {% if not_found %}
+            <p class="error-message">Product with barcode {{ barcode }} not found in the database.</p>
+        {% else %}
+            <p><strong>Barcode:</strong> {{ barcode }}<strong>     Catégorie:</strong> {{ name_prod }}</p>
+            <p id="neg"><strong>Allergens:</strong> {{ allergens }}</p>
+            <p><strong id="pos">positive :</strong> {{ pos  }}</p>
+            <p><strong id="neg">negative :</strong> {{ neg  }}</p>
+            <p><strong id="neg">Warnings:</strong> {{ warnings }}</p>
+            <p><img src="{{ prod_image }}" alt="{{ name_prod }}" id="img"></p>
+        {% endif %}
+    </div>
+</body>
+<footer>
+    <p> By :<small>Abderrahmane BOULMAKOIL</small></p>
+    <p><small>Data ressources :</small><i>Open Food Facts API</i></p>
+</footer>
+</html>
